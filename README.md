@@ -26,6 +26,7 @@ https://open.weixin.qq.com/connect/qrconnect?appid=appid&redirect_uri=redirect_u
 1. state:用于保持请求和回调的状态，授权请求后原样带回给第三方。该参数可用于防止csrf攻击（跨站请求伪造攻击），建议第三方带上该参数，可设置为简单的随机数加session进行校验
 
 其次，就可以使用本项目实现的三个接口；
-开箱即用！
+
+##开箱即用！
 
 在使用中遇到任何问题欢迎留言！
