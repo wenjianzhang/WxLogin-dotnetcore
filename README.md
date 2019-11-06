@@ -16,7 +16,7 @@ appid和secret，需要替换成对应的参数；
 ----
 在使用的过程中，需要先请求以下地址：
 ```
-https://open.weixin.qq.com/connect/qrconnect?appid=appid&redirect_uri=redirect_uri&response_type=code&scope=snsapi_login,snsapi_base,snsapi_userinfo&state=STATE#wechat_redirect
+https://open.weixin.qq.com/connect/qrconnect?appid=appid&redirect_uri=redirect_uri&response_type=code&scope=snsapi_login&state=STATE#wechat_redirect
 ```
 
 1. appid:微信开放平台申请完应用之后会提供，可在微信开放平台处查看
