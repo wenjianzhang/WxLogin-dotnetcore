@@ -16,7 +16,6 @@ namespace WxLogin.Controllers
     public class WXController : Controller
     {
         // GET
-        // https://open.weixin.qq.com/connect/qrconnect?appid=wxff26f000ea89ecd8&redirect_uri=http://www.englishbeans.cn/api/wxlogin&response_type=code&scope=snsapi_login,snsapi_base,snsapi_userinfo&state=STATE#wechat_redirect 
         [HttpGet]
         public IActionResult AccessToken(String code)
         {
