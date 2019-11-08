@@ -34,7 +34,7 @@ namespace WxLogin.Utils
             return JsonConvert.DeserializeObject<AccessToken>(accessTokenStr);
         }
 
-        public static RefreshToken GetRefreshToken(string refresh_token, string openid)
+        public static RefreshToken GetRefreshToken(string refresh_token)
         {
             Dictionary<string, string> dictionary = new Dictionary<string, string>();
             dictionary.Add("appid", appid);
