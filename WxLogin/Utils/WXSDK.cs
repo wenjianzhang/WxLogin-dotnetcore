@@ -34,11 +34,11 @@ namespace WxLogin.Utils
             return JsonConvert.DeserializeObject<AccessToken>(accessTokenStr);
         }
 
-        public static RefreshToken GetRefreshToken(string access_token, string openid)
+        public static RefreshToken GetRefreshToken(string refresh_token, string openid)
         {
             Dictionary<string, string> dictionary = new Dictionary<string, string>();
             dictionary.Add("appid", appid);
-            dictionary.Add("secret", secret);
+            dictionary.Add("refresh_token", refresh_token);
             dictionary.Add("grant_type", "refresh_token");
             string para = dictionary.MyToString();
             String url = get_refresh_token + "?" + para;
