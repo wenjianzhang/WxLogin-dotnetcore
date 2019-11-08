@@ -30,10 +30,10 @@ namespace WxLogin.Controllers
         }
         
         [HttpGet]
-        public IActionResult RefreshToken(String refresh_token,string openid)
+        public IActionResult RefreshToken(String refresh_token)
         {
             //https://api.weixin.qq.com/sns/userinfo?access_token=27_lHSLehasNfuyuBJqMTteOVKEBkWEnajIgVcAx0p9Vh4AMlUnIe17YoVy0hJtoFP2S88QcS-F1SB1kfbYi5LPTu1-cHZfcJrmzd9QFSUUUG8&openid=oE2RCwsWY3WM0Xr9CWfvXJuazzB0
-            var refreshToken = WXSDK.GetRefreshToken(refresh_token, openid);
+            var refreshToken = WXSDK.GetRefreshToken(refresh_token);
             
             return Ok(refreshToken);
         }
