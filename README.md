@@ -1,4 +1,4 @@
-# WxLogin 微信登录
+# WxLogin 微信登录 dotnet core版
 
 WXSDK.cs文件中
 ```c#
